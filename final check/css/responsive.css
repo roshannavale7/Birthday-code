@@ -1,0 +1,23 @@
+@media(max-width:768px){
+
+h1{
+
+font-size:35px;
+
+}
+
+button{
+
+font-size:18px;
+
+padding:14px 30px;
+
+}
+
+.scene{
+
+padding:20px;
+
+}
+
+}

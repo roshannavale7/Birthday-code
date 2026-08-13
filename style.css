@@ -1,0 +1,604 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+
+    background:linear-gradient(
+    135deg,
+    #ffdde1,
+    #ffc0cb,
+    #ffe6f2);
+
+    width:100vw;
+    height:100vh;
+
+    position:relative;
+}
+
+
+/* =====================================================
+    PAGE
+===================================================== */
+
+.page{
+
+    width:100%;
+    height:100vh;
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:1s;
+
+}
+
+
+.page.active{
+
+    opacity:1;
+    visibility:visible;
+}
+
+
+/* =====================================================
+TITLE
+===================================================== */
+
+.mainTitle{
+
+    font-size:60px;
+
+    font-family:'Dancing Script';
+
+    color:#ff006e;
+
+    text-shadow:
+
+    0 0 20px white,
+
+    0 0 40px pink,
+
+    0 0 60px hotpink;
+
+    margin-bottom:40px;
+
+    animation:titleGlow 2s infinite alternate;
+
+}
+
+
+@keyframes titleGlow{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.05);
+
+}
+
+}
+
+
+/* =====================================================
+TEDDY WRAPPER
+===================================================== */
+
+.teddyWrapper{
+
+display:flex;
+
+align-items:flex-end;
+
+gap:40px;
+
+margin-bottom:40px;
+
+}
+
+
+/* =====================================================
+TEDDY
+===================================================== */
+
+.teddy{
+
+width:220px;
+
+animation:bounce 2s infinite;
+
+filter:drop-shadow(0 10px 20px rgba(0,0,0,.2));
+
+}
+
+
+.left{
+
+animation-delay:.2s;
+
+}
+
+.right{
+
+animation-delay:1s;
+
+}
+
+
+/* =====================================================
+CAKE
+===================================================== */
+
+.cake{
+
+width:200px;
+
+animation:cakeGlow 2s infinite alternate;
+
+}
+
+
+@keyframes cakeGlow{
+
+from{
+
+transform:scale(1);
+
+filter:drop-shadow(0 0 10px pink);
+
+}
+
+to{
+
+transform:scale(1.08);
+
+filter:drop-shadow(0 0 35px hotpink);
+
+}
+
+}
+
+
+/* =====================================================
+TEDDY BOUNCE
+===================================================== */
+
+@keyframes bounce{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* =====================================================
+QUESTION
+===================================================== */
+
+.question{
+
+font-size:34px;
+
+color:#d90479;
+
+margin-bottom:40px;
+
+text-align:center;
+
+}
+
+
+/* =====================================================
+BUTTONS
+===================================================== */
+
+.buttons{
+
+display:flex;
+
+gap:35px;
+
+position:relative;
+
+}
+
+
+button{
+
+border:none;
+
+outline:none;
+
+cursor:pointer;
+
+padding:18px 45px;
+
+font-size:22px;
+
+border-radius:60px;
+
+font-weight:700;
+
+transition:.4s;
+
+box-shadow:
+
+0 10px 20px rgba(0,0,0,.15);
+
+}
+
+
+/* YES BUTTON */
+
+#yesBtn{
+
+background:#ff006e;
+
+color:white;
+
+}
+
+
+#yesBtn:hover{
+
+transform:scale(1.1);
+
+background:#ff2f8e;
+
+}
+
+
+/* NO BUTTON */
+
+#noBtn{
+
+background:white;
+
+color:#ff006e;
+
+position:relative;
+
+}
+
+
+#noBtn:hover{
+
+background:#ffe5ef;
+
+}
+
+
+/* =====================================================
+FLOATING HEART CONTAINER
+===================================================== */
+
+#heart-container{
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+
+/* =====================================================
+HEART
+===================================================== */
+
+.heart{
+
+position:absolute;
+
+bottom:-60px;
+
+font-size:20px;
+
+opacity:.9;
+
+animation:floatHeart linear forwards;
+
+}
+
+
+@keyframes floatHeart{
+
+0%{
+
+transform:
+
+translateY(0)
+
+rotate(0deg)
+
+scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+80%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+
+translateY(-120vh)
+
+rotate(720deg)
+
+scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+
+/* =====================================================
+PAGE TRANSITION
+===================================================== */
+
+.fadeOut{
+
+animation:fadeOut 1s forwards;
+
+}
+
+.fadeIn{
+
+animation:fadeIn 1s forwards;
+
+}
+
+
+@keyframes fadeOut{
+
+from{
+
+opacity:1;
+
+}
+
+to{
+
+opacity:0;
+
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+/* =====================================================
+GLASS EFFECT
+===================================================== */
+
+.glass{
+
+background:rgba(255,255,255,.2);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.4);
+
+}
+
+
+/* =====================================================
+SPARKLES
+===================================================== */
+
+.sparkle{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:
+
+0 0 15px white,
+
+0 0 30px pink;
+
+animation:sparkle 2s infinite;
+
+}
+
+
+@keyframes sparkle{
+
+0%{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+50%{
+
+opacity:1;
+
+transform:scale(1.4);
+
+}
+
+100%{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+}
+
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+.mainTitle{
+
+font-size:42px;
+
+}
+
+.teddy{
+
+width:150px;
+
+}
+
+.cake{
+
+width:140px;
+
+}
+
+.question{
+
+font-size:24px;
+
+}
+
+button{
+
+font-size:18px;
+
+padding:15px 30px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.teddyWrapper{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.mainTitle{
+
+font-size:34px;
+
+}
+
+.question{
+
+font-size:20px;
+
+}
+
+}

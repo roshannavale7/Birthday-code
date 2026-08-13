@@ -1,0 +1,283 @@
+@keyframes fadeIn{
+
+0%{
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.fadeIn{
+
+animation:fadeIn 1s ease;
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.float{
+
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.1);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+.pulse{
+
+animation:pulse 1.5s infinite;
+}
+
+@keyframes bgMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+.scene-content{
+
+animation:fadeIn 1.5s;
+
+}
+
+
+/* scene 2  */
+/* floating ballons */
+@keyframes floatBalloon{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* end floating ballons */
+/* pop animation  */
+@keyframes pop{
+
+0%{
+
+transform:scale(1);
+
+}
+
+100%{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+}
+
+.pop{
+
+animation:pop .4s forwards;
+
+}
+/* end pop animation  */
+
+/* zoom animation  */
+@keyframes zoomIn{
+
+0%{
+
+transform:scale(.3);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+/* end zoom animation  */
+
+/* flowers animation */
+@keyframes flowerFall{
+
+0%{
+
+transform:translateY(-120px);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh);
+
+opacity:0;
+
+}
+
+}
+/*end flowers animation */
+/* end scene 2  */
+
+/* scene 3  */
+/* flame animation */
+@keyframes flicker{
+
+0%{
+
+transform:
+translateX(-50%)
+scale(.95);
+
+}
+
+50%{
+
+transform:
+translateX(-50%)
+scale(1.1);
+
+}
+
+100%{
+
+transform:
+translateX(-50%)
+scale(.9);
+
+}
+
+}
+/*end flame animation */
+
+/* smoke animation */
+@keyframes smokeRise{
+
+0%{
+
+opacity:1;
+
+transform:
+translate(-50%,0);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:
+translate(-50%,-90px);
+
+}
+
+}
+/*end smoke animation */
+
+
+/*end  scene 3  */
+
+/* scene 6 */
+/* card opening animation  */
+@keyframes cardOpen{
+
+0%{
+
+transform:
+rotateX(-90deg);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:
+rotateX(0);
+
+opacity:1;
+
+}
+
+}
+/* end card opening animation  */
+/* end scene 6 */
