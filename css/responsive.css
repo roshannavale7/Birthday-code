@@ -44,4 +44,20 @@ padding:20px;
     display: flex;
     align-items: center;
 }
+#scene7{
+    width: 375px;
+}
+
+/* memory photos  */
+@media (max-width: 768px) {
+  .memory-gallery {
+    display: block;
+    text-align: center;
+  }
+
+  .memory-card {
+    margin: 0 auto;
+  }
+}
+
 }
