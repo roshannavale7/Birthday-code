@@ -23,7 +23,7 @@ document.addEventListener("scene5", () => {
 
       setTimeout(() => {
         nextScene();
-      }, 5000);
+      }, 6000);
     }
   }, 2000);
 });
