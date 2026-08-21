@@ -1,4 +1,6 @@
 const scenes = document.querySelectorAll(".scene");
+scenes.scrollIntoView({block: "start"});
+
 
 let currentScene = 0;
 
