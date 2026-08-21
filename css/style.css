@@ -11,7 +11,7 @@ html{
 
 body{
 
-    /* overflow:hidden; */
+    overflow-x:hidden; 
 
     font-family:'Segoe UI',sans-serif;
 
@@ -61,6 +61,7 @@ animation:bgMove 15s infinite;
     visibility:hidden;
     transition:1s;
     padding:40px;
+    scroll-snap-align: start;
 
 }
 
